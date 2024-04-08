@@ -9,7 +9,7 @@ const handler = async (m, { conn, text }) => {
     const q = m.quoted ? m.quoted : m;
     const mime = (q.msg || q).mimetype || '';
     const img = await q.download();
-    let apikey = 'GWNxKvnh35FTkb456a7A1ord' //replace with your apikey if its dead
+    let apikey = 'DZLpw7k8kze96grWBDG5yb6A' //replace with your apikey if its dead
     const formData = new FormData();
     formData.append('size', 'auto');
     formData.append('image_file', img, 'file.jpg');
