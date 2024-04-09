@@ -13,6 +13,6 @@ const handler = async (m, {conn, text}) => {
     m.reply('*[❗خطأ❗] قم برد على الصوره لتحويلها لملصق دائري*');
   }
 };
-handler.command = /^ستيكر|ستيك$/i;
+handler.command = /^ستيك|دائري$/i;
 export default handler;
 /* `https://api.dhamzxploit.my.id/api/canvas/circle?url=${url}` */
