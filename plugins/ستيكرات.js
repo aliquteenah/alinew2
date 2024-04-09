@@ -2,10 +2,10 @@ import fetch from 'node-fetch'
 import { sticker, addExif } from '../lib/sticker.js'
 import { Sticker } from 'wa-sticker-formatter'
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-if (!text) throw `*تحويل كلمة او نص لملصق*\n\n*—◉ مثال:*\n*◉ ${usedPrefix + command} ali quteenah*`
+if (!text) throw `*تحويل كلمة او نص لملصق*\n\n*—◉ مثال:*\n*◉ ${usedPrefix + command} عيد سعيد أمي*`
 let teks = encodeURI(text)
 
-if (command == 'attp') {
+if (command == 'ستيكر') {
 let a1 = await (await fetch(`https://api.erdwpe.com/api/maker/attp?text=${teks}`)).buffer()
 let a2 = await createSticker(a1, false, global.packname, global.author)
 conn.sendFile(m.chat, a2, 'sticker.webp', '', m, { asSticker: true })}
