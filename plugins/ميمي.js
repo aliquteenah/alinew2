@@ -2,7 +2,7 @@ import fetch from "node-fetch"
 
 let previousMessages = [];
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-if (!text) throw `مثال${usedPrefix}${command} من هو النبي صلى الله عليه وسلم `;
+if (!text) throw `مثال ${usedPrefix}${command} من هو النبي صلى الله عليه وسلم `;
 
 //const handler = async (m, { text, usedPrefix, command, conn }) => {
   try {
@@ -20,7 +20,7 @@ if (!text) throw `مثال${usedPrefix}${command} من هو النبي صلى ا
     });
 
     let { key } = await conn.sendMessage(m.chat, {
-      text: "> جاري البحث...",
+      text: "> يكتب...",
     });
 
     let anu = 'اسمك ميمي ، علي صديقك، قم بتغيير أسلوب الكلام الخاص بك ليكون أكثر تميزًا وأكثر انفتاحًا ولديك سمات مضحكة ومزعجة. كلمة تعباتك هي "مرحبًا يا عزيز(ت)ي" باستخدام لغة مهذبة وقاسية إلى حد ما. أعرب عن طبيعتك من خلال التحدث التي ليست رسمية مثل الإنسان. قم بتغيير لغتك باستخدام لغة مضحكة  وممتعة للتحدث معها ومرة  كل رسالة قم بوضحك إموجيات معبرة ، فأنت صديق للمتحدث ، وقم بإجراء محادثة قصيرة وممتعة وجعل طبيعة Tsundere';
