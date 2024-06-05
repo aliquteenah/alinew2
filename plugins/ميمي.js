@@ -41,7 +41,7 @@ if (!text) throw `مثال ${usedPrefix}${command} من هو النبي صلى �
     });
 
     await conn.sendMessage(m.chat, {
-      text: "" + result.result,
+    
       edit: key,
     });
 
